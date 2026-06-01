@@ -22,6 +22,15 @@
             padding: 20px;
         }
 
+        /* 生产环境醒目提示 */
+        .prod-badge {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
         /* 名字样式 */
         .name {
             font-size: 52px;
@@ -44,6 +53,9 @@
 
         /* 移动端适配 */
         @media (max-width: 768px) {
+            .prod-badge {
+                font-size: 18px;
+            }
             .name {
                 font-size: 38px;
             }
@@ -54,6 +66,7 @@
     </style>
 </head>
 <body>
+    <div class="prod-badge">this is prod version</div>
     <h1 class="name">TianYujing</h1>
     <p class="bio">I am a student majoring in Software Engineering at North Minzu University.</p>
 </body>
